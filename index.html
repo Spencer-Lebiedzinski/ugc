@@ -110,13 +110,12 @@ h1 .l2{background:linear-gradient(90deg,#f4f4f1 0%,#8d8d95 85%);-webkit-backgrou
 .camp:hover{border-color:rgba(212,255,63,.4);background:#18181c}
 .mono{flex:none;width:54px;height:54px;border-radius:15px;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:-.03em;background:#202026;color:var(--text);border:1px solid var(--line)}
 .camp:first-child .mono{background:var(--accent);color:var(--accent-ink);border-color:transparent}
-.logo-box{flex:none;width:54px;height:54px;border-radius:15px;display:grid;place-items:center;background:#202026;border:1px solid var(--line);padding:11px;transition:background .25s,border-color .25s}
-.logo-box img{width:100%;height:100%;object-fit:contain;filter:brightness(0) invert(1);opacity:.92;transition:filter .3s,opacity .3s}
-.camp:hover .logo-box{background:#252529}
-.camp:hover .logo-box img{filter:none;opacity:1}
-.camp:first-child .logo-box{background:var(--accent);border-color:transparent}
-.camp:first-child .logo-box img{filter:brightness(0);opacity:.85}
-.camp:first-child:hover .logo-box img{opacity:1}
+.logo-box{flex:none;width:54px;height:54px;border-radius:15px;display:grid;place-items:center;background:#202026;border:1px solid var(--line);padding:10px;transition:background .25s,border-color .25s,transform .25s}
+.logo-box img{width:100%;height:100%;object-fit:contain;transition:transform .25s}
+.camp:hover .logo-box{background:#252529;transform:translateY(-2px)}
+.camp:hover .logo-box img{transform:scale(1.05)}
+.camp:first-child .logo-box{background:#1a1a1c;border-color:rgba(212,255,63,.3)}
+.camp:first-child:hover .logo-box{background:#1f1f21;border-color:rgba(212,255,63,.5)}
 .camp h3{font-family:var(--display);font-weight:700;font-size:24px;letter-spacing:-.025em;line-height:1.1}
 .camp p{color:var(--muted);font-size:15px;margin-top:3px}
 
@@ -313,10 +312,10 @@ footer a:hover{color:var(--accent)}
       <p class="lede">From AI video tools to trading and money apps, I make content that explains the product fast and makes people want to try it.</p>
     </div>
     <div class="camps">
-      <div class="camp"><div class="logo-box"><img src="assets/logos/higgsfield.png" alt="Higgsfield logo"></div><div><h3>Higgsfield</h3><p>AI video generation</p></div></div>
-      <div class="camp"><div class="logo-box"><img src="assets/logos/launchpoint.png" alt="Launchpoint logo"></div><div><h3>Launchpoint</h3><p>Creator / money app</p></div></div>
-      <div class="camp"><div class="logo-box"><img src="assets/logos/whop.png" alt="Whop logo"></div><div><h3>Whop</h3><p>Creator marketplace</p></div></div>
-      <div class="camp"><div class="logo-box"><img src="assets/logos/invo.png" alt="Invo logo"></div><div><h3>Invo</h3><p>Trading app</p></div></div>
+      <div class="camp"><div class="logo-box"><img src="assets/logos/higgsfield.png" alt="Higgsfield logo" onerror="this.parentElement.innerHTML='H';this.parentElement.className='mono';"></div><div><h3>Higgsfield</h3><p>AI video generation</p></div></div>
+      <div class="camp"><div class="logo-box"><img src="assets/logos/launchpoint.png" alt="Launchpoint logo" onerror="this.parentElement.innerHTML='L';this.parentElement.className='mono';"></div><div><h3>Launchpoint</h3><p>Creator / money app</p></div></div>
+      <div class="camp"><div class="logo-box"><img src="assets/logos/whop.png" alt="Whop logo" onerror="this.parentElement.innerHTML='W';this.parentElement.className='mono';"></div><div><h3>Whop</h3><p>Creator marketplace</p></div></div>
+      <div class="camp"><div class="logo-box"><img src="assets/logos/invo.png" alt="Invo logo" onerror="this.parentElement.innerHTML='I';this.parentElement.className='mono';"></div><div><h3>Invo</h3><p>Trading app</p></div></div>
       <div class="camp"><div class="mono">T</div><div><h3>Today AI</h3><p>App campaign</p></div></div>
     </div>
   </div>
