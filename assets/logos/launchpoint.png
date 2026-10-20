@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This page doesn't exist or has moved. Head back to the Launchpoint homepage." />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/assets/launchpoint-tile.svg" type="image/svg+xml" />
+    <title>Page Not Found | Launchpoint</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Launchpoint" />
+    <meta property="og:title" content="Page Not Found | Launchpoint" />
+    <meta property="og:description" content="This page doesn't exist or has moved. Head back to the Launchpoint homepage." />
+    <meta property="og:image" content="https://www.launchpointhq.com/img/og-2026-09.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://www.launchpointhq.com/img/og-2026-09.png" />
+    <link rel="preload" href="/assets/geist.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/lp-display.woff2" as="font" type="font/woff2" crossorigin />
+
+    <!-- Google Ads / gtag -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17254473923');
+      function injectGtag() {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17254473923';
+        document.head.appendChild(s);
+      }
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(injectGtag, { timeout: 4000 });
+      } else {
+        window.addEventListener('load', injectGtag);
+      }
+    </script>
+
+    <!-- RB2B -->
+    <script>
+      window.addEventListener('load', function () {
+        if (window.reb2b) return;
+        window.reb2b = { loaded: true };
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://b2bjsstore.s3.us-west-2.amazonaws.com/b/R6G5YHY09P65/R6G5YHY09P65.js.gz';
+        document.head.appendChild(s);
+      });
+    </script>
+
+    <!-- Launchpoint conversion events: after load so pixels don't contend with first paint -->
+    <script>
+      window.addEventListener('load', function () {
+        var s = document.createElement('script');
+        s.async = true;
+        s.setAttribute('data-launchpoint-conversions', 'true');
+        s.src = 'https://dashboard.launchpointhq.com/conversion-events.js';
+        s.onload = function () {
+          s.setAttribute('data-loaded', 'true');
+          var sdk = window.LaunchpointConversions;
+          if (!sdk) return;
+          sdk.track && sdk.track('page_view');
+          sdk.installOutboundTracking && sdk.installOutboundTracking();
+        };
+        document.head.appendChild(s);
+      });
+    </script>
+      <!-- X conversion tracking base code -->
+    <script>
+      !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+      },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+      a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+      twq('config','r66gu');
+    </script>
+    <!-- End X conversion tracking base code -->
+    <script type="module" crossorigin src="/assets/style-BHQOabbd.js"></script>
+    <script type="module" crossorigin src="/assets/cal-embed-pqtpR-tJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/style-Bl4eWRv6.css">
+    <link rel="stylesheet" crossorigin href="/assets/subpage-Cxqq_Lw9.css">
+  </head>
+  <body>
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a class="logo" href="/" aria-label="Launchpoint home">
+          <img src="/assets/launchpoint-tile.svg" alt="" width="29" height="29" />
+          <span>Launchpoint</span>
+        </a>
+        <div class="nav-links" data-desktop-nav>
+            <div class="nav-dropdown">
+              <button class="nav-link nav-link--has-caret" type="button">
+                Solutions
+                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              </button>
+              <div class="nav-mega nav-mega--sol">
+                <a class="mega-item mega-item--sol" href="/"><span><b>Canvas UGC</b><small>Creators post for your brand at scale</small></span></a>
+                <a class="mega-item mega-item--sol" href="/performance-ugc"><span><b>Performance UGC</b><small>Creator ads paid on GMV and ROAS</small></span></a>
+              </div>
+            </div>
+            <a class="nav-link" href="/#customers">Case studies</a>
+            <div class="nav-dropdown">
+              <button class="nav-link nav-link--has-caret" type="button">
+                Resources
+                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              </button>
+              <div class="nav-mega">
+                <a class="mega-item" href="/blog">Blog</a>
+                <a class="mega-item" href="/guides/rates">Rate Guides</a>
+                <a class="mega-item" href="https://launchpoint.video">Duplicate Video Checker</a>
+              </div>
+            </div>
+            <a class="nav-link" href="/ios">For Creators</a>
+            <a class="nav-link" href="https://docs.launchpointhq.com">Developer Docs</a>
+            <a class="nav-link" href="/careers">Careers</a>
+        </div>
+
+        <div class="nav-right">
+          <div class="nav-cta">
+            <a class="button button-dark button-small" href="https://home.launchpointhq.com">Login</a>
+            <a class="button button-outline button-small" href="https://cal.com/forms/888481e9-90ab-4c1e-a089-8106d634f498" target="_blank" rel="noopener" data-cal-embed>Book demo</a>
+          </div>
+          <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-menu" data-mobile-menu hidden>
+        <p class="mobile-menu-title">Solutions</p>
+        <a href="/">Canvas UGC</a>
+        <a href="/performance-ugc">Performance UGC</a>
+        <p class="mobile-menu-title">Case studies</p>
+        <a href="/case-studies/c4-energy">C4 Energy</a>
+        <a href="/case-studies/dr-pepper">Dr Pepper</a>
+        <a href="/case-studies/new-era">New Era</a>
+        <a href="/case-studies/gopuff">Gopuff</a>
+        <a href="/case-studies/breakaway">Breakaway</a>
+        <a href="/case-studies/krea">Krea</a>
+        <p class="mobile-menu-title">Explore</p>
+        <a href="/blog">Blog</a>
+        <a href="/guides/rates">Rate Guides</a>
+        <a href="/ios">For Creators</a>
+        <a href="/careers">Careers</a>
+        <div class="mobile-menu-btns">
+          <a class="button button-outline" href="https://cal.com/forms/888481e9-90ab-4c1e-a089-8106d634f498" target="_blank" rel="noopener" data-cal-embed>Book demo</a>
+          <a class="button button-dark" href="https://home.launchpointhq.com">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="sub-page">
+      <section class="sub-hero sub-hero-center">
+        <h1>This page didn't make it to publish.</h1>
+        <p>The link's broken, or the page moved. Everything else on Launchpoint is exactly where you left it.</p>
+        <a class="button button-dark" href="/" style="margin-top: 28px;">Back to home</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand" style="margin-top: 0; padding-top: 0; border-top: 0;">
+          <div>
+            <p>© 2026 Launchpoint. All rights reserved.</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-col" style="flex-direction: row; gap: 24px;">
+              <a href="/#customers">Customers</a>
+                    <a href="/terms">Terms</a>
+              <a href="/privacy">Privacy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mobileMenu = document.querySelector("[data-mobile-menu]");
+      menuToggle.addEventListener("click", () => {
+        const open = mobileMenu.hidden;
+        mobileMenu.hidden = !open;
+        menuToggle.setAttribute("aria-expanded", String(open));
+        document.body.classList.toggle("menu-open", open);
+      });
+    </script>
+  </body>
+</html>
