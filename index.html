@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Spencer Lebiedzinski — UGC Creator</title>
-<meta name="description" content="Spencer Lebiedzinski — UGC that stops the scroll and sells the app. 3.8M+ lifetime views.">
+<meta name="description" content="Spencer Lebiedzinski — UGC that stops the scroll and sells the app. 4M+ lifetime views.">
 <meta name="theme-color" content="#0a0a0b">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%230a0a0b%22/%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%227%22 fill=%22%23d4ff3f%22/%3E%3C/svg%3E">
 <link rel="preload" href="assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
@@ -212,7 +212,7 @@ footer a:hover{color:var(--accent)}
       <h1><span>Spencer</span><span class="l2">Lebiedzinski</span></h1>
       <p class="tagline">UGC that <mark>stops the scroll</mark> and sells the app.</p>
       <div class="chips">
-        <div class="chip"><strong class="a">3.8M+</strong><small>lifetime views</small></div>
+        <div class="chip"><strong class="a" data-lifetime-views>4M+</strong><small>lifetime views</small></div>
         <div class="chip"><strong>2M+</strong><small>views per month</small></div>
         <div class="chip"><strong>June 2026</strong><small>creating UGC since</small></div>
       </div>
@@ -227,7 +227,7 @@ footer a:hover{color:var(--accent)}
       <div class="phone p3"><img src="assets/poster-4.jpg" alt="" width="608" height="1080"></div>
       <div class="phone p1"><img src="assets/poster-1.jpg" alt="" width="608" height="1080"></div>
       <div class="float f2"><small>Top reel</small>903K views</div>
-      <div class="float f1"><small>Lifetime</small>3.8M+ views</div>
+      <div class="float f1"><small>Lifetime</small><span data-lifetime-views>4M+</span> views</div>
     </div>
   </div>
 </header>
@@ -419,6 +419,23 @@ footer a:hover{color:var(--accent)}
     v.addEventListener('play',function(){delete v.dataset.userPaused;});
     io.observe(v);
   });
+})();
+</script>
+<script>
+/* Load and display lifetime views from data/stats.json */
+(function(){
+  fetch('data/stats.json')
+    .then(function(r){return r.json()})
+    .then(function(data){
+      if(!data.lifetimeViews)return;
+      var millions=data.lifetimeViews/1000000;
+      var formatted=Math.floor(millions*10)/10;
+      var display=(formatted%1===0?Math.floor(formatted):formatted)+'M+';
+      document.querySelectorAll('[data-lifetime-views]').forEach(function(el){
+        el.textContent=display;
+      });
+    })
+    .catch(function(){});
 })();
 </script>
 </body>
